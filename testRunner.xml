@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="The Score App">
+    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="envName" value="browserstack"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="automationName" value="uiautomator2"/>
+
+    <parameter name="team" value="Barcelona"/>
+    <parameter name="player" value="Tiger Wood"/>
+
+    <test name="The score app Tests">
+        <classes>
+            <class name="Tests.LeagueTest"/>
+            <class name="Tests.PlayerTest"/>
+            <class name="Tests.TeamTest"/>
+        </classes>
+    </test>
+</suite>
